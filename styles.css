@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Quicksand:400,500');
 
 /*applied to multiple*/
-
 body, section {
   background-color: #FFF;
 }
@@ -10,7 +9,7 @@ h2, footer a, footer p, nav {
   font-family: 'Quicksand', sans-serif;
 }
 
-header, h2, footer a, footer p, footer{
+header, h2, footer a, footer p, footer {
   color: #FFF;
 }
 
@@ -33,7 +32,7 @@ header {
   letter-spacing: 3px;
 }
 
-h1{
+h1 {
   padding-bottom: 40px;
 }
 
@@ -43,15 +42,16 @@ h1{
 }
 
 /*content*/
-main{
+section {
   display: flex;
 }
-main section  {
-    flex-direction: column;
-    margin-top: -25px;
-    border-left: 5px solid;
-    border-right: 5px solid;
-    border-color: #FFF;
+
+section section {
+  flex-direction: column;
+  margin-top: -25px;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-color: #FFF;
 }
 
 h2, footer a, footer p {
