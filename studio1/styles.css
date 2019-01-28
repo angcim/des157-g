@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi|Varela+Round');
+
+/* Applied to Multiple*/
+fieldset, footer, .button {
+  font-family: 'Varela Round', sans-serif;
+}
+
+footer, a {
+  color: #FFF;
+}
+
+form, .button {
+  border-radius: 0.7em;
+}
+
+/*body*/
+body {
+  background-image: url("images/background.jpg");
+  background-repeat: repeat;
+  width: 1000px;
+  margin: auto;
+}
+
+header {
+  background: none;
+  font-family: 'Baloo Thambi', cursive;
+  font-size: 40px;
+  color: #8ba2ef;
+  text-indent: 20px;
+}
+
+img {
+  position: fixed;
+  right: 130px;
+  top: 150px;
+}
+
+/*form layout*/
+fieldset {
+  font-weight: 600;
+  border: none;
+  font-size: 20px;
+  color: #12405b;
+}
+
+form {
+  background-color: #FFF;
+  width: 600px;
+  padding: 20px;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  border-color: #719bfc;
+  color: #719bfc;
+  padding: 10px 20px 10px 20px;
+  background-color: #d4e0fc;
+}
+
+#item, #dog {
+  border-color: #51baf7;
+  background-color: #eaf7ff;
+  color: #51baf7;
+}
+
+/*footer*/
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #a4bbf9;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a47fc6;
+}
