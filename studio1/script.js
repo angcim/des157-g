@@ -9,14 +9,8 @@ var form = document.querySelector('form');
 
 // global variable
 var myMsg = document.querySelector('#myMsg');
-var playAgain = document.querySelector('#reset2');
 
 function processForm(evt) {
-
-  // show form
-  form.style.display = 'none';
-  myMsg.style.display = 'block';
-  playAgain.style.display = 'block';
 
   // local variables
 
@@ -37,7 +31,17 @@ function processForm(evt) {
   var verb4 = document.querySelector('#verb4').value;
   var image = document.querySelector('#image');
 
+  //message
+
   myMsg.innerHTML = 'Today is the day I\'m going to adopt a ' + dog + '. I want my dog to have ' + color + ' spots. My dream dog will know how to do tricks like ' + verb + ', ' + verbTwo + ', and ' + verbThree + '. Most importantly, my ' + dog + ' will be the ' + adjest + ' dog in the world. I start to head over to the ' + adj + ' dog shelter ' + number + ' miles away from my house. I go inside and the shelter looks so ' + adj2 + '. All the dogs are just so ' + adj3 + '. Then there ' + pronoun + ' was. Looking at me with those puppy dog eyes. I named my dog ' + name + '. ' + name + ' was so happy ' + pronoun + ' got a free ' + item + '. We were both so ' + emotion + ' that we both ' + verb4 + ' home.'
+
+  // show form
+  form.style.display = 'none';
+  myMsg.style.display = 'block';
+  document.querySelector('#reset2').style.display = 'block';
+  document.querySelector('h2').style.display = 'block';
+
+  //if statements to show the different breeds and items
 
   if (dog == 'Golden Retriever' & item == 'bone') {
     document.getElementById('image').src = "images/gr-bone.gif";
@@ -82,11 +86,13 @@ function processForm(evt) {
   evt.preventDefault();
 }
 
+//reset form
 function resetForm() {
   form.style.display = 'flex';
   myMsg.style.display = 'none';
   document.getElementById('image').src = "images/mystery.jpg"
-  playAgain.style.display = 'none';
+  document.querySelector('#reset2').style.display = 'none';
+  document.querySelector('h2').style.display = 'none';
 
   // if someone resets the form, hide the text
   // myMsg.innerHTML = '';

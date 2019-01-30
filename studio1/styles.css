@@ -15,13 +15,17 @@ form, .button, #msgSection, #reset2 {
 
 form, #msgSection {
   background-color: #FFF;
-  padding: 30px;
+  padding: 20px;
   width: 600px;
   margin-top: -50px;
 }
 
 .button, #reset2 {
   padding: 10px 20px 10px 20px;
+}
+
+#reset2, h2 {
+  display: none;
 }
 
 /*body*/
@@ -75,18 +79,15 @@ input[type="text"], input[type='number'] {
   color: #5a7bc9;
 }
 
-
 /*buttons*/
 #reset2 {
-  display: none;
   margin: 0px 0px 0px 200px;
-
 }
 
 .button, #reset2 {
   border-color: #40a5f7;
   color: #40a5f7;
-    background-color: #c6e5ff;
+  background-color: #c6e5ff;
 }
 
 .button {
