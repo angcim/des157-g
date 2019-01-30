@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Thambi|Varela+Round');
 
 /* Applied to Multiple*/
-fieldset, footer, .button {
+fieldset, footer, .button, #msgSection {
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -9,8 +9,15 @@ footer, a {
   color: #FFF;
 }
 
-form, .button {
+form, .button, #msgSection, #reset2 {
   border-radius: 0.7em;
+}
+
+form, #msgSection {
+  background-color: #FFF;
+  padding: 30px;
+  width: 600px;
+  margin-top: -50px;
 }
 
 /*body*/
@@ -25,8 +32,11 @@ header {
   background: none;
   font-family: 'Baloo Thambi', cursive;
   font-size: 40px;
-  color: #8ba2ef;
   text-indent: 20px;
+}
+
+h1 a {
+  color: #8ba2ef;
 }
 
 img {
@@ -44,25 +54,38 @@ fieldset {
 }
 
 form {
-  background-color: #FFF;
-  width: 600px;
-  padding: 20px;
-  margin-top: -50px;
   display: flex;
   flex-direction: row;
 }
 
-.button {
+.button, #reset2 {
   border-color: #719bfc;
   color: #719bfc;
   padding: 10px 20px 10px 20px;
   background-color: #d4e0fc;
 }
 
+#reset2 {
+  display: none;
+  margin: 0px 0px 0px 200px;
+}
+
 #item, #dog {
   border-color: #51baf7;
   background-color: #eaf7ff;
   color: #51baf7;
+}
+
+input[type="text"], input[type='number'] {
+  border: 1px solid #95ace2;
+  border-radius: 3px;
+  background-color: #dbe5fc;
+  color: #5a7bc9;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background: #4374e8;
+  color: #FFF;
 }
 
 /*footer*/
@@ -79,6 +102,14 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, h1 a:hover {
   color: #a47fc6;
+}
+
+/*After Form is Processed*/
+#msgSection {
+  width: 600px;
+  line-height: 2em;
+  color: #1d9fe0;
+  font-size: 18px;
 }

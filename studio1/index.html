@@ -12,17 +12,17 @@
 
 <body>
   <header>
-    <h1>Adopt a Dog</h1>
+    <h1><a href="index.html">Adopt a Dog</a></h1>
   </header>
 
-  <img src="images/mystery.jpg" alt="mysterydog">
+  <img src="images/mystery.jpg" alt="mysterydog" id="image">
 
   <form>
     <section>
       <fieldset>
         <label for="dog">Choose a Breed</label> <br>
         <select name="dog" id="dog">
-          <option value="Golden Retriever">Golden Retriever</option>
+          <option value="Golden Retriever" id="goldenretriever">Golden Retriever</option>
           <option value="Border Collie">Border Collie</option>
           <option value="Husky">Husky</option>
           <option value="Corgi">Corgi</option>
@@ -85,8 +85,8 @@
         <select name="item" id="item">
           <option value="bone">Bone</option>
           <option value="frisbee">Frisbee</option>
-          <option value="hat">Hat</option>
-          <option value="shirt">Shirt</option>
+          <option value="ball">Ball</option>
+          <option value="rope">Rope</option>
         </select>
       </fieldset>
 
@@ -101,13 +101,14 @@
       </fieldset>
 
       <input type="reset" class="button" id="reset">
-      <input type="submit" value="Adopt a Dog" class="button" id="submit">
+      <input type="submit" value="Adopt a Dog!" class="button" id="submit">
     </section>
   </form>
 
   <section id="msgSection">
-  <p id="myMsg"></p>
-</section>
+    <p id="myMsg"></p>
+    <button id='reset2'>Adopt Another Dog!</button>
+  </section>
 
   <footer>
     <p><a href="https://angcim.github.io/des157-g">Back to Portal Page</a> | <a href="mailto:&#097;&#103;&#099;&#105;&#109;&#101;&#110;&#101;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#097;&#103;&#099;&#105;&#109;&#101;&#110;&#101;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a>
