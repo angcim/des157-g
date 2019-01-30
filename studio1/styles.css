@@ -5,7 +5,7 @@ fieldset, footer, .button, #msgSection {
   font-family: 'Varela Round', sans-serif;
 }
 
-footer, a {
+footer, a, input[type="submit"]:hover, input[type="reset"]:hover {
   color: #FFF;
 }
 
@@ -18,6 +18,10 @@ form, #msgSection {
   padding: 30px;
   width: 600px;
   margin-top: -50px;
+}
+
+.button, #reset2 {
+  padding: 10px 20px 10px 20px;
 }
 
 /*body*/
@@ -58,18 +62,6 @@ form {
   flex-direction: row;
 }
 
-.button, #reset2 {
-  border-color: #719bfc;
-  color: #719bfc;
-  padding: 10px 20px 10px 20px;
-  background-color: #d4e0fc;
-}
-
-#reset2 {
-  display: none;
-  margin: 0px 0px 0px 200px;
-}
-
 #item, #dog {
   border-color: #51baf7;
   background-color: #eaf7ff;
@@ -83,9 +75,26 @@ input[type="text"], input[type='number'] {
   color: #5a7bc9;
 }
 
+
+/*buttons*/
+#reset2 {
+  display: none;
+  margin: 0px 0px 0px 200px;
+
+}
+
+.button, #reset2 {
+  border-color: #40a5f7;
+  color: #40a5f7;
+    background-color: #c6e5ff;
+}
+
+.button {
+  margin: 20px 10px 0px 0px;
+}
+
 input[type="submit"]:hover, input[type="reset"]:hover {
-  background: #4374e8;
-  color: #FFF;
+  background-color: #257ec6;
 }
 
 /*footer*/
