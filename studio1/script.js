@@ -2,7 +2,7 @@
 console.log('reading js');
 
 document.querySelector('#submit').addEventListener('click', processForm);
-document.querySelector('#reset').addEventListener('click', resetForm);
+document.querySelector('form').addEventListener('click', resetForm);
 document.querySelector('#reset2').addEventListener('click', resetForm);
 
 var form = document.querySelector('form');
@@ -11,6 +11,7 @@ var form = document.querySelector('form');
 var myMsg = document.querySelector('#myMsg');
 
 function processForm(evt) {
+  console.log('processForm');
 
   // show form
   form.style.display = 'none';
@@ -82,7 +83,8 @@ function processForm(evt) {
   } else if (dog == 'Corgi' & item == 'rope') {
     document.getElementById('image').src = "images/c-rope.gif"
   }
-
+  
+  return false;
   evt.preventDefault();
 }
 
@@ -93,7 +95,6 @@ function resetForm() {
   document.getElementById('image').src = "images/mystery.jpg"
   document.querySelector('#reset2').style.display = 'none';
   document.querySelector('h2').style.display = 'none';
-
 
   // if someone resets the form, hide the text
   // myMsg.innerHTML = '';
