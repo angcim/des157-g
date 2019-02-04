@@ -97,6 +97,10 @@ a:hover {
   color: #cddc39;
 }
 
+ul li {
+  padding-bottom: 10px;
+}
+
 /*footer*/
 footer {
   width: 100%;
@@ -162,4 +166,14 @@ img {
 .source {
   margin-top: -30px;
   text-align: right;
+}
+
+/*aside*/
+aside{
+  background-color: #FFF;
+  padding: 0px 50px 20px 50px;
+}
+
+aside p{
+  padding: 0px 50px 0px 50px;
 }
