@@ -1,36 +1,76 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Quicksand:400,500');
 
+/* applied to multiple */
+body, #container {
+  text-align: center;
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
   background-color: #000;
-  margin-left: 2em;
 }
 
 header {
-  padding-left: 4em;
-}
-
-img {
-  text-align: center;
+  padding-left: 2em;
 }
 
 .small {
   padding: 0 1.5em 0 3em;
 }
 
-.large {
+.large, #paragraph {
   display: none;
 }
 
-p {
-  margin-top: 0;
-  color: #FFF;
-  width: 15em;
+/*IDs*/
+#paragraph {
+  width: 600px;
+  padding: 10px;
+  text-align: left;
+  line-height: 1.5em;
+  background-color: #8a92a0;
+  opacity: 0.8;
+  border-radius: 0.7em;
+  position: fixed;
+  top: 7em;
+  left: 2.5em;
+}
+
+#text {
+  margin-left: 2em;
+  width: 250px;
+}
+
+#title {
+  margin-left: 1.25em;
 }
 
 #container {
-  display: flex;
-  padding: 3em 1.5em 0 0;
+  display: block;
+  padding-top: 3em;
+}
+
+#beanie, #bottle, #laptop {
+  width: 200px;
+}
+
+#beanie:hover, #bottle:hover, #laptop:hover {
+  transform: scale(1.1);
+}
+
+p, #paragraph, #text {
+  color: #FFF;
+}
+
+#close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 30px;
+}
+
+#close:hover {
+  color: #3c3c59;
 }
 
 /*footer*/
@@ -57,7 +97,13 @@ a:hover, h1 a:hover {
   color: #4343a5;
 }
 
+/*for bigger screens*/
 @media only screen and (min-width: 769px) {
+  body {
+    max-width: 1000px;
+    margin: auto;
+  }
+
   .large {
     display: block;
   }
@@ -66,25 +112,38 @@ a:hover, h1 a:hover {
     display: none;
   }
 
-  header {
-    font-size: 30px;
-    margin-left: -3em;
+  header, #stressed {
+    font-size: 25px;
   }
 
-  #container {
-    display: block;
-    padding: 0em 1.5em 0 4em;
+  img {
+    padding: 0.5em 0 0.5em 0;
   }
+
 
   section {
     display: flex;
   }
+/*IDS */
+  #beanie, #bottle, #laptop {
+    width: 200px;
+  }
 
-  p {
-    margin-top: 0;
-    color: #FFF;
-    width: 30em;
+  #container {
+    margin-top: -3em;
+    display: inline-grid;
+  }
+
+  #paragraph {
+    flex-direction: column;
+    width: 500px;
+    text-align: left;
     line-height: 1.5em;
-    font-size: 18px;
+    background-color: #8a92a0;
+    position: fixed;
+    top: 10em;
+    left: 5em;
+    opacity: 0.8;
+    border-radius: 0.7em;
   }
 }
