@@ -168,6 +168,12 @@ img {
   text-align: right;
 }
 
+#userpersona p {
+  margin-left: 50px;
+  width: 600px;
+  text-indent: 0;
+}
+
 /*aside*/
 aside{
   background-color: #FFF;
