@@ -1,51 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <meta charset="utf-8">
   <title>Studio 4: Meet Me at the Library</title>
 
   <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
-   <link rel="stylesheet" href="styles.css">
-<!-- <link rel="stylesheet" href="library/annotorious.css" /> -->
+  <script src="annotorious.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
+        <li id="home"><a href="index.html">Portfolio Review</a></li>
+        <li class="difColor"><a href="#">ABOUT</a></li>
+        <li><a href="#">SHOWCASE</a></li>
+        <li class="difColor"><a href="#">COMMUNITY</a></li>
+        <li><a href="#">SIGN IN</a></li>
       </ul>
     </nav>
-    <img src="images/placer.png" alt="placer" width="1300" height="300">
-    <h1>Welcome to Portfolio </h1>
   </header>
 
-  <section id="pressStart">
-    <h2>Start Critiquing Other Designer's Work</h2>
-        <img src="images/test.jpg" alt="placer" id="test" class="annotatable" >
-    <p>instructions (how to)</p>
-    <button type="button">Start Critiquing</button>
-    <button type="button">Upload an Project</button>
+  <section id="instructions">
+    <h1>Start Critiquing Other Designer's Work</h1>
+    <p>Click and drag on section of the image. Write a comment and press save. To delete a comment, hover and click on the section and press delete.</p>
+  </section>
+
+  <section id="work">
+    <img src="images/image.png" alt="interior design" id="image" class="annotatable" width="650" height="470">
+    <img src="images/image.png" alt="interior design" id="imageSmall" class="annotatable" width="700" height="520">
+    <section id="description">
+      <section class="description">
+        <h2>Interior Design of a Living Room Space</h2>
+        <p class="text">This project is a living room space that uses a triad color scheme. It was created by using a two point perspective.</p>
+      </section>
+      <section class="description">
+        <h3>Creator</h3>
+        <img src="images/portrait.png" alt="illustrator" width="80" height="104">
+        <p class="text" id="portrait">Angelika Cimene</p>
+      </section>
+      <section class="description">
+        <h3>Tools</h3>
+        <img src="images/illustrator.png" alt="illustrator" width="30" height="30">
+        <p class="text" id="illustrator">Adobe Illustrator</p>
+      </section>
     </section>
 
-    <section id="critique">
-      <h2>Name of Work</h2>
-        <img src="images/placer.png" alt="placer" class="annotatable">
-      <p>Description of work (flexbox with image)</p>
-      <p>Comment section at the bottom</p>
-          <button type="button">Submit</button>
+    <section id="commentSection">
+      <section>
+        <h3>Comment Section</h3>
+        <fieldset>
+          <label for="email">Name</label> <br>
+          <input type="email" name="email" id="email" required> <br>
+
+          <label for="comment">Leave a Comment</label> <br>
+          <textarea id="comment" rows="6" required></textarea>
+          <input type="submit" value="Submit" id="submitComment">
+        </fieldset>
       </section>
 
-      <footer>
+      <section id="oneComment">
+        <h4 id="msgName"></h4>
+        <p id="myMsg"></p>
+      </section>
+    </section>
+  </section>
+
+  <section id="button">
+    <button type="button" id="submit">Submit</button>
+    <button type="button" id="upload">Upload a Project</button>
+  </section>
+
+  <footer>
     <p><a href="https://angcim.github.io/des157-g">Back to Portal Page</a> | <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a> | <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
   </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
