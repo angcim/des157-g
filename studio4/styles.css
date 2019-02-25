@@ -27,13 +27,6 @@ ul li {
   background-color: #8eceff;
 }
 
-#image {
-  display: none;
-}
-
-#imageSmall {
-  padding-bottom: 10px;
-}
 
 nav {
   margin: -20px 0 0 -50px;
@@ -117,7 +110,7 @@ footer {
 
 #button {
   position: absolute;
-  bottom: -12em;
+  bottom: -8.5em;
   left: 2.5em;
 }
 
@@ -425,12 +418,8 @@ html.hasTouch .annotator-viewer li .annotator-controls {
     padding-bottom: 26px;
   }
 
-  #image, #description {
+#description {
     display: block;
-  }
-
-  #imageSmall {
-    display: none;
   }
 
   fieldset, textarea {
