@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro');
+
+body {
+  font-family: 'Source Sans Pro';
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #F4BC69;
+}
+
+ul li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 20px;
+  padding-right: 50px;
+}
+
+h2 {
+  color: #1895a5;
+  font-size: 50px;
+}
+
+h1 {
+  padding-left: 40px;
+}
+
+.steps {
+  display: none;
+}
+
+#howItWorks {
+  padding: 0 50px 50px 250px;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 5px;
+  text-align: center;
+  background-color: #00acc1;
+}
+
+#header {
+  width: 100%;
+}
+
+.button {
+  padding: 30px 40px 30px 40px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+#requirements, #work {
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  padding: 50px;
+}
+
+#requirements {
+  background-color: #FCEDC0;
+}
+
+h3, .special {
+  color: #E89B34;
+}
+
+button {
+  padding: 10px;
+  font-size: 20px;
+}
+
+#community {
+  padding: 30px;
+}
+
+.special {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.special:hover {
+  color: #FFF;
+  background-color: #E89B34;
+}

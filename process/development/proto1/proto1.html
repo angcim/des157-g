@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Prototype 1</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="home">
+    <img src="images/background.png" alt="Place Holder" id="header">
+    <nav>
+      <ul>
+        <li><a href="#home">Portfolio Review</a></li>
+        <li><a href="#home">How it Works</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#">Upload</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Page -->
+  <section id="howItWorks">
+    <h2>HOW IT WORKS</h2>
+
+    <!-- step 1 -->
+    <p>Go to the community page and find a piece of work you want to review</p>
+
+    <!-- step 2 -->
+    <p class="steps">Click on the edit button at the top left corner of the project.</p>
+
+    <!-- step 3 -->
+    <p class="steps">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+
+    <button type="button" class="button">1</button>
+    <button type="button" class="button">2</button>
+    <button type="button" class="button">3</button>
+
+
+
+    <button type="button">Start Critiquing Now!</button>
+  </section>
+
+  <!-- How it Works - Going to be a Popup -->
+  <section id="requirements">
+    <button type="button">X</button>
+    <h2>Requirements</h2>
+    <h3>CRITIQUE REQUIREMENTS</h3>
+    <p>In order for designers to improve their works and portfolios for showcase, they must receive thoughtful criticism and feedback.</p>
+
+    <h3>HOW TO GIVE PROPER CRITIQUES</h3>
+    <p>1) Discuss about strengths and weaknesses.
+      (don’t just say that you like it or not, or if it’s good or bad, elaborate on why it’s effective/not effective) </p>
+
+    <p>2) Don’t try to solve the problem. Let the designer find the solution. (example: don’t say change the font from one to another due to legibility issues, but say the font is hard to read and let the designer decide on how to fix it)</p>
+
+    <button type="button">Okay</button>
+  </section>
+
+  <!-- Community Page -->
+  <section id="community">
+    <fieldset>
+      <label for="communityPage">Community Page</label> <br>
+      <select name="communityPage" id="communityPage">
+        <option value="Recent" id="recent">Recent</option>
+        <option value="Trending" id="trending">Trending</option>
+        <option value="Most Popular">Most Popular</option>
+      </select>
+    </fieldset>
+
+
+
+    <a href="#work"><img src="images/madlib.jpg" alt="Place Holder" width="300" height="300"></a>
+    <a href="#work"><img src="images/interface.png" alt="Place Holder" width="300" height="300"></a>
+    <a href="#work"><img src="images/library.png" alt="Place Holder" width="300" height="300"></a>
+  </section>
+
+  <!-- Work - Going to be a Popup -->
+  <section id="work">
+    <p><a href="#community" class="special">back</a>
+      <p>
+        <h2>"Adopt a Dog" Madlib</h2>
+        <img src="images/madlib2.jpg" alt="Place Holder">
+        <h3>Description</h3>
+        <p>This is an "Adopt a Dog" madlib created with the use of HTML, CSS, and Javascript. The whole website has a cute and playful dog theme such as the bones and colar background. The image on the right side is where the dog will appear once
+          the form has been submitted</p>
+        <h3>Creator</h3>
+        <p>Angelika Cimene</p>
+        <h3>Tools</h3>
+        <p>Adobe Illustrator</p>
+        <p>Adobe AfterEffects</p>
+        <p>Atom</p>
+
+        <p><a href="#critique" class="special">Edit/Critique</a>
+          <p>
+  </section>
+
+  <!-- Critique -->
+  <section id="critique">
+    <p><a href="#critique" class="special">Edit/Critique</a>
+      <p>
+        <h2>"Adopt a Dog" Madlib</h2>
+
+        <img src="images/madlib2.jpg" alt="Place Holder">
+        <h3>Description</h3>
+        <p>This is an "Adopt a Dog" madlib created with the use of HTML, CSS, and Javascript. The whole website has a cute and playful dog theme such as the bones and colar background. The image on the right side is where the dog will appear once
+          the form has been submitted</p>
+        <h3>Creator</h3>
+        <p>Angelika Cimene</p>
+        <h3>Tools</h3>
+        <p>Adobe Illustrator</p>
+        <p>Adobe AfterEffects</p>
+        <p>Atom</p>
+
+        <button type="button" class="special">Reset</button>
+        <button type="button" class="special">Submit</button>
+
+
+        <h3>Comment Section</h3>
+        <fieldset>
+          <label for="email">Name</label> <br>
+          <input type="email" name="email" id="email" required> <br>
+
+          <label for="comment">Leave a Comment</label> <br>
+          <textarea id="comment" rows="6" required></textarea>
+          <input type="submit" value="Submit" id="submitComment">
+        </fieldset>
+
+        <button type="button">Submit</button>
+  </section>
+
+
+  <footer>
+    <p><a href="https://angcim.github.io/des157-g">Back to Portal Page</a> | <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a> | <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
+  </footer>
+</body>
+
+</html>
