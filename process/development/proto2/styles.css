@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro');
+
+body{
+    font-family: 'Source Sans Pro';
+    padding-bottom: 0;
+}
+/* headers */
+h2, #step {
+  color: #30B78D;
+  font-size: 50px;
+}
+
+h1 {
+  padding-left: 40px;
+}
+
+
+h3, .special{
+  color:#E89B34;
+}
+
+h3{
+  font-size: 30px;
+}
+
+#howItWorks {
+    padding-left: 250px;
+    position: absolute;
+    top: 25em;
+    left: 0em;
+}
+
+
+#header {
+  width: 101.35%;
+  margin-left: -10px;
+}
+
+#requirements, #work{
+      padding: 30px;
+  }
+
+  #requirements{
+    background-color: #FCEDC0;
+    position: fixed;
+    border-radius: 5%;
+    top: 7em;
+    left: 27em;
+    width: 40%;
+    border: 1em solid #fff;
+}
+
+#requirements, #community, #critique, #work{
+  display: none;
+}
+
+#instructions{
+  font-size: 25px;
+}
+
+p{
+  color: #777C7A;
+  font-size: 20px;
+}
+
+
+/* buttons and navigation */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left:0;
+  background-color: #F4BC69;
+}
+
+ul li{
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 20px;
+  padding-right: 50px;
+}
+
+a:hover{
+  color:#E89B34;
+}
+
+.special {
+    border: 1px solid gray;
+    padding:10px;
+}
+
+.special:hover {
+  color: #FFF;
+  background-color:#E89B34;
+}
+
+button{
+  padding: 10px;
+  font-size: 20px;
+}
+
+.button{
+  padding: 10px 23px 10px 23px;
+  border-radius: 50%;
+  font-size: 40px;
+  border: 4px solid #30B78D;
+  color: #E29C10;
+}
+
+.button:hover{
+  background-color: #c0f9e7;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 5px;
+  text-align: center;
+  background-color: #00acc1;
+}
+
+footer p{
+  font-size: 10px;
+}
+
+#close{
+  background-color: #E89B34;
+  color:#FFF;
+  padding: 10px;
+  width: 3em;
+margin-left: 20em;
+font-size: 20px;
+border-radius: 15%;
+}
+
+#close:hover {
+  background-color: #FFF;
+  color:#E89B34;
+
+}
+.steps{
+  margin-top: -7em;
+  margin-left: 8em;
+}
+
+#community{
+  padding-top: 50px;
+}
