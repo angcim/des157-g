@@ -177,8 +177,8 @@ work3.addEventListener('click', function() {
   document.querySelector('#header').style.display = 'none';
   document.querySelector('#community').style.display = 'none';
   document.querySelector('#imageChange').src = "images/work3-bigger.png";
-  title.innerHTML = 'California Hall Logo Design';
-  description.innerHTML = 'This is a logo design used for a signage system for California Hall. With a theme of abundance, the logo contains numerous fruits that are commonly grown in California. The colors used were based on images of real life fruit.';
+  title.innerHTML = 'Personal Branding Logo';
+  description.innerHTML = 'This is a logo design that I created to brand myself. I used prismatic shapes to illustrate my graphic design style. I love geomtric shapes and playful colors such as teal.';
   popTitle.innerHTML = 'Note';
   text.innerHTML = 'You Must Scroll Down in Order to Annotate the Logo Design';
 });
