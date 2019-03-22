@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat');
+
+/* Applied to Multiple */
+body, label {
+  font-family: 'Montserrat';
+  padding-bottom: 0;
+  margin: auto;
+}
+
+nav, ul, footer, .special, #goBack, #loading {
+  position: fixed;
+  z-index: 1000;
+}
+
+button, .sectionBackground, #commentSection, .close {
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+.special, #goBack, #loading, #critique, #community, #oneComment {
+  display: none;
+}
+
+/* Colors */
+#start, .button, .close, .button2 {
+  background-color: #7499D1;
+}
+
+#critique, #goBack {
+  background-color: #FFF;
+}
+
+#start, .button, .close, .button2, a, #guidelinesExit, .okay, footer p, #exitUpload, button:hover {
+  color: #FFF;
+}
+
+#start:hover, .button:hover, .close:hover, .button2:hover, #guidelinesExit:hover, .okay:hover, button:hover {
+  background-color: #D12F71;
+}
+
+button, footer a:hover {
+  color: #7499D1;
+}
+
+h2, #community label {
+  font-family: 'Lobster';
+  color: #D12F71;
+  font-size: 75px;
+}
+
+#communityPage, button {
+  border-color: #7499D1;
+}
+
+#loading, button {
+  background-color: #CEDBFA;
+}
+
+#communityPage, h3 {
+  color: #1F467F;
+}
+
+#goBack, #guidelinesExit, .okay, #community, .close, footer, #thankyou, #popup {
+  text-align: center;
+}
+
+.comment, a, #getStarted p, #guidelinesExit, .okay, #communityPage {
+  font-size: 20px;
+}
+
+#community img, #community img:hover {
+  border: 5px solid #D0E2F7;
+}
+
+footer a, .button2, .button {
+  font-size: 15px;
+}
+
+/* Texts and Parapraphs */
+p {
+  color: #686468;
+  line-height: 1.5em;
+}
+
+/*headers */
+#header, nav {
+  width: 100%;
+}
+
+h1 {
+  padding-left: 50px;
+}
+
+h2 {
+  margin-top: -30px;
+}
+
+h3, #start {
+  font-size: 25px;
+}
+
+h4 {
+  color: #D12F71;
+}
+
+/* Navigation Bar */
+#home {
+  font-size: 50px;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  background-color: #7499D1;
+}
+
+ul {
+  top: 2em;
+  left: 15em;
+}
+
+ul li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  padding-right: 50px;
+}
+
+a:hover, #exitUpload:hover {
+  color: #1F467F;
+}
+
+/* Get Started*/
+#getStarted {
+  position: fixed;
+}
+
+#getStarted {
+  top: 33em;
+  left: 10em;
+}
+
+#getStarted p {
+  margin-top: -3em;
+  color: #686468;
+}
+
+#start {
+  padding: 0.75em 1.25em 0.75em 1.25em;
+}
+
+/* Guidelines */
+.special {
+  background-color: #B8D0F2;
+  top: 8em;
+  left: 27em;
+  width: 40%;
+  padding: 3em;
+  opacity: 0.85;
+}
+
+#guidelines p {
+  color: #383838;
+}
+
+#guidelinesExit, .okay {
+  background-color: #7499D1;
+  width: 15%;
+  padding: 0.5em;
+  margin-left: 23em;
+  border: 2px solid #FFF;
+}
+
+/* Community Page */
+fieldset {
+  border: none;
+  text-align: left;
+}
+
+#community img:hover {
+  border-radius: 50%;
+  transition: border-radius 5s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 0.5;
+}
+
+#community img {
+  margin: 0em 1em 0em 1em;
+}
+
+#communityPage {
+  background-color: #D0E2F7;
+}
+
+.button {
+  margin-left: 0.75em;
+  padding: 0.25em 0.75em 0.25em 0.75em;
+}
+
+/* Critique Page */
+#critique {
+  margin-top: 5em;
+  padding: 2em;
+}
+
+#description {
+  width: 400px;
+  padding-top: 6.5em;
+}
+
+#critique img, #description {
+  margin-right: 1.5em;
+}
+
+#critique img {
+  background-color: #D0E2F7;
+  padding: 0.5em;
+}
+
+#critique section section h3 {
+  display: flex;
+}
+
+.sectionBackground, #commentSection {
+  background-color: #D0E2F7;
+  margin-bottom: 1em;
+}
+
+.close {
+  width: 5em;
+}
+
+/* Comment Section */
+input[type="text"] {
+  padding: 0.5em 1.5em 0.5em 1.5em;
+}
+
+#commentSection {
+  margin-top: 6.5em;
+  height: 44.5em;
+}
+
+textarea {
+  width: 300px;
+}
+
+.button2 {
+  padding: 1em;
+  margin-bottom: 5em;
+}
+
+#oneComment {
+  display: none;
+}
+
+/* Popups */
+#thankyou p {
+  font-size: 18px;
+}
+
+#exitUpload, #popTitle {
+  font-size: 40px;
+}
+
+#loading {
+  padding: 3em;
+  top: 15em;
+  left: 40em;
+  border-radius: 30%;
+  /* opacity: 0.8; */
+}
+
+#uploadfile {
+  width: 400px;
+}
+
+/* Buttons */
+#goBack {
+  top: 20em;
+  left: 35em;
+  border: 5px solid #7499D1;
+  padding: 2em;
+  opacity: 0.9;
+}
+
+button {
+  font-size: 17px;
+  margin-left: 0.5em;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #1F467F;
+}
+
+footer a {
+  padding-left: 3em;
+}

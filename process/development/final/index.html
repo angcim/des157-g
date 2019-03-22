@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Prototype 1</title>
+  <link href="https://annotorious.github.io/latest/themes/dark/annotorious-dark.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="https://annotorious.github.io/latest/annotorious.min.js"></script>
+  <script type="text/javascript" src="https://annotorious.github.io/latest/anno-parse-plugin.js"></script>
+  <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation  -->
+  <header id="nav">
+    <img src="images/background.png" alt="background" id="header">
+    <nav>
+      <h1><a href="index.html" id="home">CRITICA</a></h1>
+      <ul>
+        <li><a href="#community" id="communitylink">COMMUNITY</a></li>
+        <li><a href="#uploadfile" id="uploadLink">UPLOAD</a></li>
+        <li><a href="#guidelines" id="guidelineslink">GUIDELINES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Loading -->
+  <img src="images/loading.gif" alt="loading" id="loading">
+
+  <!-- Popup -->
+  <section id="popup" class="special">
+    <h2 id="popTitle"></h2>
+    <p id="popMsg"></p>
+    <div class="okay">OKAY!</div>
+  </section>
+
+  <!-- Get Started-->
+  <section id="getStarted">
+    <h2>New to Critica</h2>
+    <p>Critica is a portfolio review website that specializes in portofolio improvement.</p>
+    <section class="start">
+      <button type="button" class="button" id="start">Get Started</button>
+    </section>
+  </section>
+
+  <!-- Guidelines -->
+  <section id="guidelines" class="special">
+    <h3>CRITIQUE REQUIREMENTS</h3>
+    <p>In order for designers to improve their works and portfolios for showcase, they must receive thoughtful criticism and feedback. Every designer must respect each other's work. Any sort of discouragement towards another designer and their work
+      will not be tolerated.</p>
+
+    <h3>HOW TO GIVE PROPER CRITIQUES</h3>
+    <p>1) Discuss about strengths and weaknesses.
+      (don’t just say that you like it or not, or if it’s good or bad, elaborate on why it’s effective/not effective) </p>
+
+    <p>2) Don’t try to solve the problem. Let the designer find the solution. (example: don’t say change the font from one to another due to legibility issues, but say the font is hard to read and let the designer decide on how to fix it)</p>
+
+    <div class="okay" id="gdExit">OKAY!</div>
+  </section>
+
+
+  <!-- Upload -->
+  <section id="uploadfile" class="special">
+    <div id="exitUpload">&otimes;</div>
+    <h3>Upload Your Project</h3>
+    <p><i>Must be JPG or PNG ONLY</i></p>
+    <form>
+      <fieldset>
+        <label for="upload" class="comment">Upload your File</label> <br>
+        <input type="file" name="upload" id="upload" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="fileName" class="comment">Project Name</label> <br>
+        <input type="text" name="fileName" id="fileName" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="designerName" class="comment">Designer's Name</label> <br>
+        <input type="text" name="designerName" id="designerName" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="fileDescription" class="comment">File Description</label> <br>
+        <textarea id="fileDescription" rows="6" required></textarea>
+      </fieldset>
+
+      <input type="reset" class="button" id="resetProject">
+      <input type="submit" value="submit" class="button" id="uploadProject">
+    </form>
+  </section>
+
+  <!-- Community Page -->
+  <section id="community">
+    <fieldset>
+      <label for="communityPage">Community Page</label> <br>
+      <select name="communityPage" id="communityPage">
+        <option value="Recent" id="recent">Recent</option>
+        <option value="Trending" id="trending">Trending</option>
+        <option value="Most Popular">Most Popular</option>
+      </select>
+      <input type="submit" value="Submit" class="button" id="submit">
+    </fieldset>
+
+    <img src="images/work1.png" alt="logo 1" width="400" height="400" id="work1" class="work">
+    <img src="images/work2.png" alt="logo 2" width="400" height="400" id="work2" class="work">
+    <img src="images/work3.jpg" alt="logo 3" width="400" height="400" id="work3" class="work">
+  </section>
+
+
+  <!-- Critique -->
+  <section id="critique">
+
+    <section id="goBack">
+      <h3>Are you sure you want to go back?</h3>
+      <p>You will lose all progress</p>
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
+    </section>
+
+    <section id="thankyou" class="special">
+      <h3>Thank you for your Feedback</h3>
+      <p>You are being redirected to the Community page</p>
+    </section>
+
+    <section>
+      <div class="close">back</div>
+      <h3 class="title"></h3>
+      <img src="images/work1-bigger.png" alt="work" width="700" height="700" id="imageChange" class="annotatable">
+      <section>
+        <button type="button" class="button2" id="reset">Reset</button>
+        <button type="button" class="button2" id="submitProject">Submit</button>
+      </section>
+    </section>
+
+    <section id="description">
+      <section class="sectionBackground">
+        <h3>Description</h3>
+        <p class="description"></p>
+      </section>
+
+      <section class="sectionBackground">
+        <h3>Creator</h3>
+        <img src="images/portrait.png" alt="illustrator" width="80" height="104">
+        <p>Angelika Cimene</p>
+      </section>
+
+      <section class="sectionBackground">
+        <h3>Tools</h3>
+        <img src="images/illustrator.png" alt="illustrator" width="30" height="30">
+        <p>Adobe Illustrator</p>
+      </section>
+    </section>
+
+    <section id="commentSection">
+      <section>
+        <h3>Comment Section</h3>
+        <fieldset>
+          <label for="email" class="comment">Name</label> <br>
+          <input type="text" name="email" id="email" required> <br>
+          <label for="comment" class="comment">Leave a Comment</label> <br>
+          <textarea id="comment" rows="6" required></textarea>
+          <input type="submit" value="Submit" id="submitComment" class="button2">
+        </fieldset>
+      </section>
+
+      <section id="oneComment">
+        <h4 id="msgName"></h4>
+        <p id="myMsg"></p>
+      </section>
+    </section>
+  </section>
+
+  <footer>
+    <p><a href="https://angcim.github.io/des157-g">Back to Portal Page</a> | <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a> | <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
