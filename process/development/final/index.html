@@ -7,7 +7,7 @@
   <link href="https://annotorious.github.io/latest/themes/dark/annotorious-dark.css" rel="stylesheet" type="text/css" />
   <!-- <script type="text/javascript" src="https://annotorious.github.io/latest/annotorious.min.js"></script>
   <script type="text/javascript" src="https://annotorious.github.io/latest/anno-parse-plugin.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/@recogito/annotorious@2.0.4/dist/annotorious.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@recogito/annotorious@2.0.4/dist/annotorious.min.js"></script> -->
   <link href="styles.css" rel="stylesheet">
 
 </head>
@@ -177,6 +177,23 @@
   <footer>
     <p><a href="https://angcim.github.io/des157-g">Back to Portal Page</a> | <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a> | <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
   </footer>
+
+  <script>
+   (function() {
+     var anno = Annotorious.init({
+       image: 'hallstatt' // image element or ID
+     });
+
+     anno.loadAnnotations('annotations.w3c.json');
+
+     // Add event handlers using .on
+     r.on('createAnnotation', function(annotation) {
+       // Do something
+     });
+   })()
+ </script>
+
+ <script type="text/javascript" src="annotorious.min.js"></script>
 
   <script src="script.js"></script>
 </body>
