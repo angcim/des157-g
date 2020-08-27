@@ -8,6 +8,7 @@
   <!-- <script type="text/javascript" src="https://annotorious.github.io/latest/annotorious.min.js"></script>
   <script type="text/javascript" src="https://annotorious.github.io/latest/anno-parse-plugin.js"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/@recogito/annotorious@2.0.4/dist/annotorious.min.js"></script> -->
+   <script type="text/javascript" src="annotorious.min.js"></script>
   <link href="styles.css" rel="stylesheet">
 
 </head>
@@ -179,21 +180,45 @@
   </footer>
 
   <script>
-   (function() {
-     var anno = Annotorious.init({
-       image: 'imageChange' // image element or ID
-     });
+    (function() {
+      var anno = Annotorious.init({
+        image: 'imageChange',
+        locale: 'auto',
+        tagVocabulary: [ 'Animal', 'Artwork', 'Building', 'Person', 'Vegetation', 'Waterbody' ]
+      });
 
-     anno.loadAnnotations('annotations.w3c.json');
+      anno.on('selectAnnotation', function(annotation) {
+        console.log('selected', annotation);
+      });
 
-     // Add event handlers using .on
-     r.on('createAnnotation', function(annotation) {
-       // Do something
-     });
-   })()
- </script>
+      anno.on('createAnnotation', function(a) {
+        console.log('created', a);
+      });
 
- <script type="text/javascript" src="annotorious.min.js"></script>
+      anno.on('updateAnnotation', function(annotation, previous) {
+        console.log('updated', previous, 'with', annotation);
+      });
+
+      anno.on('deleteAnnotation', function(annotation) {
+        console.log('deleted', annotation);
+      });
+
+      anno.loadAnnotations('annotations.w3c.json');
+
+      anno.setDrawingTool('rect');
+
+      var toolToggle = document.getElementById('current-tool');
+      toolToggle.addEventListener('click', function() {
+        if (toolToggle.innerHTML == 'RECTANGLE') {
+          toolToggle.innerHTML = 'POLYGON';
+          anno.setDrawingTool('polygon');
+        } else {
+          toolToggle.innerHTML = 'RECTANGLE';
+          anno.setDrawingTool('rect');
+        }
+      });
+    })()
+  </script>
 
   <script src="script.js"></script>
 </body>
